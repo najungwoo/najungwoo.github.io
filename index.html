@@ -158,11 +158,6 @@
                 <li class="navbar-item">
                     <button class="navbar-link" data-nav-link>포트폴리오</button>
                 </li>
-
-                <li class="navbar-item">
-                    <button class="navbar-link" data-nav-link>작성 문서</button>
-                </li>
-
             </ul>
 
         </nav>
@@ -330,7 +325,7 @@
                     </div>
                     <div class="modal-content">
                         <h4 class="h3 modal-title" data-modal-title>프렌차이즈 그룹웨어</h4>
-                        <time datetime="2025-01-06">25-01-06 ~ 25-02-14</time>
+                        <time datetime="2024-12-23">25-01-06 ~ 25-02-11</time>
 
                         <div data-modal-text>
                             <p>
@@ -575,11 +570,7 @@
             </header>
 
             <section class="projects">
-                <ul class="filter-list">
-                    <li class="filter-item">
-                        <button data-filter-btn>팀 프로젝트</button>
-                    </li>
-                </ul>
+                
 
                 <div class="filter-select-box">
                     <button class="filter-select" data-select>
@@ -593,7 +584,7 @@
                     <!-- 파이널 프로젝트 -->
                     <li class="project-item active" data-filter-item data-category="팀 프로젝트">
                         <div class="project-content">
-                            <a href="http://43.202.46.225/Final_FoodBee/login" target="_blank">
+                            <a href="http://54.180.63.130/login" target="_blank">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
                                         <ion-icon name="eye-outline"></ion-icon>
@@ -607,30 +598,69 @@
                             <br>
                             <h4 class="project-title">프로젝트 소개</h4>
                             <h3 class="project-category">
-                                가맹점 관리를 목적으로 하고 있는 회사라면<br>
-                                적용할 수 있는 기능을 중점으로<br>
-                                가맹점 관리 교육 등의 기능들을 추가하여 구축한 그룹웨어 시스템입니다
-                            </h3><br>
+                                <strong>조직도</strong><br>
+                                - 조직도로 부서장 정보, 부서별 직원 조회<br>
+                                - 전체 사원 조회, 검색, 사원 등록<br>
+                                - 회사/부서 정보 조회, 수정, 상태변경 기능<br><br>
 
-                                 <h3 class="project-category">
-                                     [신규 사원등록]<br>
-                                     - 사원 초대 시 JavaMailSender를 활용하여 이메일 발송 구현.<br>
-                                     - Spring Security(CustomUserDetailsService)로 권한·인증 처리 시<br>
-                                     프로필 사진까지 세션에 로드하여 사용자별 접근 제어와 UX를 개선.<br>
-                                     - 데이터베이스에 새로운 사원 등록 시 중복 여부 확인 및 유효성 검증 로직 구현.<br>
+                                <strong>전자결재</strong><br>
+                                - 양식별 결재 작성 및 기안<br>
+                                - 중간/최종 결재 처리<br>
+                                - 결재 상태별 문서 확인<br><br>
 
-                                     [마이페이지]<br>
-                                     - MultipartFile로 프로필 이미지 업로드 및 서버에 저장, 기존 파일 삭제 처리 구현<br>
-                                     - 사원은 본인의 기본 정보를 실시간으로 수정 가능.<br>
-                                     - 결재 시스템에서 사용되는 디지털 서명 이미지를 추가하거나 수정 가능.<br>
+                                <strong>근태관리</strong><br>
+                                - 전날 출장, 연차 등을 고려하여 근태 기록 자동 업데이트<br>
+                                - 권한에 따른 근태유형 변경 및 근태 승인<br>
+                                - 부서별, 개인별 출장 및 연차 신청 기록 조회<br>
+                                - 권한에 따른 연차 조정 기능<br><br>
 
-                                     [일정 관리]<br>
-                                     - FullCalendar.js와 REST API를 활용해 달력에 일정 표시.<br>
-                                     - 일정 페이지에서 AJAX 통신을 통해 서버에서 실시간으로 불러와 달력에 표시.<br>
-                                     - 사용자가 새 일정을 추가할 수 있는 기능 제공<br>
-                                     - 일정 상세보기 페이지에서 수정 , 삭제 기능<br>
-                                     - 결제 및 회의실 예약시 일정 추가 <br>
-                                 </h3>
+                                <strong>일정관리</strong><br>
+                                <mark style="background-color: #A0E7E5;">- 내 일정 등록, 수정, 삭제 기능</mark><br>
+                                <mark style="background-color: #A0E7E5;">- 권한에 따른 부서일정 등록, 수정, 삭제 기능</mark><br>
+                                <mark style="background-color: #A0E7E5;">- 출장,연차 결재완료 시 일정 자동 등록</mark><br>
+                                <mark style="background-color: #A0E7E5;">- 회의실 예약 시 일정 자동 등록</mark><br><br>
+
+                                <strong>가맹점관리</strong><br>
+                                - 가맹점 목록 조회, 수정, 가맹점별 매출 통계<br>
+                                - 가맹점 대상 교육 목록 조회, 등록<br>
+                                - 가맹점 문의사항 조회, 답변 등록<br><br>
+
+                                <strong>커뮤니티</strong><br>
+                                - 권한에 따른 부서 공지사항 조회, 등록, 수정, 삭제 기능<br>
+                                - 카테고리별 피드형 게시판(댓글, 좋아요, 조회수, 파일 첨부)<br><br>
+
+                                <strong>메일함</strong><br>
+                                - 메일 전송(파일 첨부)<br>
+                                - 수신/답장 기능<br>
+                                - 임시 저장, 삭제 기능<br><br>
+
+                                <strong>메신저</strong><br>
+                                - 웹 소켓을 이용한 채팅 기능<br>
+                                - 사원을 검색하여 초대<br>
+                                - 접속상태 조회 및 변경<br><br>
+
+                                <strong>신규 사원등록</strong><br>
+                                <mark style="background-color: #A0E7E5;">- 사원 초대 시 JavaMailSender를 활용하여 이메일 발송 구현</mark><br>
+                                <mark style="background-color: #A0E7E5;">- Spring Security(CustomUserDetailsService)로 권한·인증 처리 시 프로필 사진까지 세션에 로드하여 사용자별 접근 제어와 UX를 개선</mark><br>
+                                <mark style="background-color: #A0E7E5;">- 데이터베이스에 새로운 사원 등록 시 중복 여부 확인 및 유효성 검증 로직 구현</mark><br><br>
+
+                                <strong>마이페이지</strong><br>
+                                <mark style="background-color: #A0E7E5;">- MultipartFile로 프로필 이미지 업로드 및 서버에 저장, 기존 파일 삭제 처리 구현</mark><br>
+                                <mark style="background-color: #A0E7E5;">- 사원은 본인의 기본 정보를 실시간으로 수정 가능</mark><br>
+                                <mark style="background-color: #A0E7E5;">- 결재 시스템에서 사용되는 디지털 서명 이미지를 추가하거나 수정 가능</mark><br>
+                            </h3>
+                            <br>
+                            <h4 class="project-title">개발 환경</h4>
+                            <h3 class="project-category">
+                                Language: Java17, HTML5, CSS,JavaScript, SQL<br>
+                                Framework: SpringBoot, MyBatis, BootStrap<br>
+                                Library: JSTL, JQuery, Lombok<br>
+                                Database: MySQL<br>
+                                WAS: Tomcat 10.1<br>
+                                OS: Windows, Mac OS<br>
+                                Tools: STS4, MySQLWorkBench8.0, Github<br>
+                            </h3>
+
                             <br>
                             <h4 class="project-title">개발 환경</h4>
                             <h3 class="project-category">
@@ -649,8 +679,31 @@
                                 - Platform : AWS Lightsail
                             </h3>
                             <br>
-                            
+
                             <h3 class="project-category"><a href="https://github.com/najungwoo/haruon" target="_blank"><mark style="background-color: #FAFAA0;">깃 소스코드</mark></a></h3>
+
+                            <h3 class="project-category">
+                                <a href="https://docs.google.com/spreadsheets/d/1_2jt6uWHEDrZeYYrJ9j3cnmxJiIQ8ytv/edit?gid=1711618800#gid=1711618800" target="_blank"><mark style="background-color: #FAFAA0;">요구사항 정의서</mark></a>
+                            </h3>
+
+                            <h3 class="project-category">
+                                <a href="https://drive.google.com/file/d/12nKWBO59jlTtfI3WEftyXo4P2aTvbllO/view?usp=sharing" target="_blank"><mark style="background-color: #FAFAA0;">테이블 목록 정의서</mark></a>
+                            </h3>
+
+                            <h3 class="project-category">
+                                <a href="https://drive.google.com/file/d/165VDJQDqiuiWo3ycASGSIZJyNAXy-zLX/view?usp=drive_link" target="_blank"><mark style="background-color: #FAFAA0;">그룹웨어 화면설계서</mark></a>
+                            </h3>
+
+                            <h3 class="project-category">
+                                <a href="https://docs.google.com/spreadsheets/d/1TvnBQZCM1G_dTX_utwrdTUKGJ3wyng_S/edit?usp=sharing&ouid=106995358265152035103&rtpof=true&sd=true" target="_blank"><mark style="background-color: #FAFAA0;">WBS 기능구현 체크리스트</mark></a>
+                            </h3>
+
+                            <h3 class="project-category">
+                                <a href="https://docs.google.com/presentation/d/1IcXWFPvPxsQVvvl12adb_SX7ujnMPCLu/edit?usp=sharing&ouid=117452500569661067157&rtpof=true&sd=true" target="_blank"><mark style="background-color: #FAFAA0;">파이널 PPT</mark></a>
+                            </h3>
+                            <h3 class="project-category">
+                                <a href="http://54.180.63.130/login" target="_blank"><mark style="background-color: #FAFAA0;">url 주소</mark></a>
+                            </h3>
 
                         </div>
                     </li>
@@ -658,15 +711,12 @@
                     <!-- 세미 프로젝트 -->
                     <li class="project-item active" data-filter-item data-category="팀 프로젝트">
                         <div class="project-content">
-                            <a href="http://43.202.46.225/Semi_F_GDCC/welcome.jsp" target="_blank">
                                 <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
+
                                     <img src="./assets/images/semi2.png" alt="세미 프로젝트" loading="lazy">
                                 </figure>
                             </a>
-                            <h3 class="project-title"><mark style="background-color: #FAF58C;">Golf&Hotel</mark></h3>
+                            <h3 class="project-title"><mark style="background-color: #FAF58C;">의류 쇼핑몰</mark></h3>
                             <p class="project-category">팀 프로젝트</p>
                             <h3 class="project-category">2024. 11. 25 ~ 2024. 12. 15 </h3>
                             <br>
@@ -700,20 +750,24 @@
                                 - 카테고리 관리: 카테고리 추가/삭제 기능<br>
                             </h3>
 
-                                <br>
-                                    <h4 class="project-title">개발 환경</h4>
-                                    <h3 class="project-category">
-                                        - OS : Windows 11<br>
-                                        Framework : BootStrap<br>
-                                        Language : HTML5, CSS, Java(openJDK 17)<br>
-                                        Database : MySQL<br>
-                                        WAS : Apache Tomcat 10.1<br>
-                                        IDE : STS4, MySQLWorkBench8.0, Github<br>
-                                    </h3>
-                                <br>
+                            <br>
+                            <h4 class="project-title">개발 환경</h4>
+                            <h3 class="project-category">
+                                - OS : Windows 11<br>
+                                Framework : BootStrap<br>
+                                Language : HTML5, CSS, Java(openJDK 17)<br>
+                                Database : MySQL<br>
+                                WAS : Apache Tomcat 10.1<br>
+                                IDE : STS4, MySQLWorkBench8.0, Github<br>
+                            </h3>
+                            <br>
 
 
-                                <h3 class="project-category"><a href="https://github.com/najungwoo/nachojang" target="_blank"><mark style="background-color: #FAFAA0;">깃 소스코드</mark></a></h3>
+                            <h3 class="project-category"><a href="https://github.com/najungwoo/nachojang" target="_blank"><mark style="background-color: #FAFAA0;">깃 소스코드</mark></a></h3>
+
+                            <h3 class="project-category">
+                                <a href="https://drive.google.com/file/d/1k1bQmjMNSqhdOSIM_PLu9-zWDMieuxE8/view?usp=drive_link" target="_blank"><mark style="background-color: #FAFAA0;">ERD</mark></a>
+                            </h3>
                         </div>
                     </li>
                 </ul>
@@ -824,200 +878,6 @@
             }
 
         </style>
-
-        <!--
-      - #작성 문서
-    -->
-
-        <article class="blog" data-page="작성 문서">
-
-            <header>
-                <h2 class="h2 article-title">작성 문서</h2>
-            </header>
-
-            <section class="blog-posts">
-
-                <ul class="blog-posts-list">
-
-                    <li class="blog-post-item">
-                        <a href="https://docs.google.com/spreadsheets/d/1_2jt6uWHEDrZeYYrJ9j3cnmxJiIQ8ytv/edit?gid=1711618800#gid=1711618800" target="_blank">
-
-                            <figure class="blog-banner-box">
-                                <img src="./assets/images/pptID.png" loading="lazy">
-                            </figure>
-
-                            <div class="blog-content">
-
-                                <div class="blog-meta">
-                                    <p class="blog-category">팀 프로젝트</p>
-
-                                    <span class="dot"></span>
-
-                                    <time datetime="2025-01-06">2025. 01. 06 ~ 2025. 02. 24 (6주)</time>
-                                </div>
-
-                                <h3 class="h3 blog-item-title">요구사항 정의서</h3>
-
-                                <p class="blog-text">
-                                    파이널 프로젝트의 요구사항 정의서입니다.
-                                </p>
-
-                            </div>
-
-                        </a>
-                    </li>
-
-                    <li class="blog-post-item">
-                        <a href="https://drive.google.com/file/d/1w6E8B15943P1NyvM4XmeujOQpyVk9kM9/view?usp=drive_link" target="_blank">
-
-                            <figure class="blog-banner-box">
-                                <img src="./assets/images/tvList.png" loading="lazy">
-                            </figure>
-
-                            <div class="blog-content">
-
-                                <div class="blog-meta">
-                                    <p class="blog-category">팀 프로젝트</p>
-
-                                    <span class="dot"></span>
-
-                                    <time datetime="2025-01-06">2025. 01. 06 ~ 2025. 02. 24 (6주)</time>
-                                </div>
-
-                                <h3 class="h3 blog-item-title">테이블 목록 정의서 </h3>
-
-                                <p class="blog-text">
-                                    테이블 목록 정의서 입니다.
-                                </p>
-
-                            </div>
-
-                        </a>
-                    </li>
-
-                    <li class="blog-post-item">
-                        <a href="https://drive.google.com/file/d/165VDJQDqiuiWo3ycASGSIZJyNAXy-zLX/view?usp=drive_link" target="_blank">
-
-                            <figure class="blog-banner-box">
-                                <img src="./assets/images/pptView.png" loading="lazy">
-                            </figure>
-
-                            <div class="blog-content">
-
-                                <div class="blog-meta">
-                                    <p class="blog-category">팀 프로젝트</p>
-
-                                    <span class="dot"></span>
-
-                                    <time datetime="2025-01-06">2025. 01. 06 ~ 2025. 02. 24 (6주)</time>
-                                </div>
-
-                                <h3 class="h3 blog-item-title">그룹웨어 화면설계서</h3>
-
-                                <p class="blog-text">
-                                    Figma툴을 이용해 팀원들과 협업으로 만들어낸 화면설계서입니다.
-                                </p>
-
-                            </div>
-
-                        </a>
-                    </li>
-
-                    <li class="blog-post-item">
-                        <a href="https://docs.google.com/spreadsheets/d/1TvnBQZCM1G_dTX_utwrdTUKGJ3wyng_S/edit?usp=sharing&ouid=106995358265152035103&rtpof=true&sd=true" target="_blank">
-
-                            <figure class="blog-banner-box">
-                                <img src="./assets/images/wbs.png" loading="lazy">
-                            </figure>
-
-                            <div class="blog-content">
-
-                                <div class="blog-meta">
-                                    <p class="blog-category">팀 프로젝트</p>
-
-                                    <span class="dot"></span>
-
-                                    <time datetime="2025-01-06">2025. 01. 06 ~ 2025. 02. 24 (6주)</time>
-                                </div>
-
-                                <h3 class="h3 blog-item-title">WBS 기능구현 체크리스트</h3>
-
-                                <p class="blog-text">
-                                    WBS기능구현 체크리스트입니다
-                                </p>
-
-                            </div>
-
-                        </a>
-                    </li>
-
-                    <li class="blog-post-item">
-                        <a href="https://docs.google.com/presentation/d/1IcXWFPvPxsQVvvl12adb_SX7ujnMPCLu/edit?usp=sharing&ouid=117452500569661067157&rtpof=true&sd=true" target="_blank">
-
-                            <figure class="blog-banner-box">
-                                <img src="./assets/images/pptMain.png" loading="lazy">
-                            </figure>
-
-                            <div class="blog-content">
-
-                                <div class="blog-meta">
-                                    <p class="blog-category">팀 프로젝트</p>
-
-                                    <span class="dot"></span>
-
-                                    <time datetime="2025-01-06">2025. 01. 06 ~ 2025. 02. 24 (6주)</time>
-                                </div>
-
-                                <h3 class="h3 blog-item-title">파이널 PPT</h3>
-
-                                <p class="blog-text">
-                                    팀 프로젝트의 개요, ERD,테이블 정의서 등 프로젝트 내용을 한번에 볼 수 있습니다.
-                                </p>
-
-                            </div>
-
-                        </a>
-                    </li>
-
-
-
-                    <li class="blog-post-item">
-                        <a href="https://drive.google.com/file/d/1k1bQmjMNSqhdOSIM_PLu9-zWDMieuxE8/view?usp=drive_link" target="_blank">
-
-                            <figure class="blog-banner-box">
-                                <img src="./assets/images/semiERD.png" loading="lazy">
-                            </figure>
-
-                            <div class="blog-content">
-
-                                <div class="blog-meta">
-                                    <p class="blog-category">팀 프로젝트</p>
-
-                                    <span class="dot"></span>
-
-                                    <time datetime="2024-11-25">24-11-25 ~ 24-12-15(3주)</time>
-                                </div>
-
-                                <h3 class="h3 blog-item-title">ERD</h3>
-
-                                <p class="blog-text">
-                                    세미프로젝트 ERD입니다.
-                                </p>
-
-                            </div>
-
-                        </a>
-                    </li>
-
-                </ul>
-
-            </section>
-
-        </article>
-
-        <!--
-      - #CONTACT
-    -->
 
 
 
